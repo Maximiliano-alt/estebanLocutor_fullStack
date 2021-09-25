@@ -17,7 +17,7 @@ body {
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     padding: 0;
-
+    height: 100%;
   }
 
   /* Imagen utilizada en pantallas de anchura 393 px y menor */

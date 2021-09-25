@@ -35,112 +35,62 @@
   opacity: 0.8;
   visibility: hidden;
 }
+.input-error{
+
+  color: red;
+  font-size: 2.3vw;
+  margin: -10px 0 0 -62vw !important;
+}
+
+#error-email{
+  margin: -10px 0 0 -58vw !important;
+}
 form input{
   width: 80%;
   padding: 1.5%;
   color: #FFFFFF;
   margin-top: 2%;
   margin-bottom: 3%;
-  /* backdrop-filter: blur(1px); */
+  backdrop-filter: blur(1px);
   border: 0;
+  background-color: #0000004C;
+  border: 1px #FFFFFF solid;
+}
+form select{
+  width: 83%;
+  padding: 1.5%;
+  color: #FFFFFF;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  backdrop-filter: blur(1px);
+  border: 0;
+  background-color: #0000004C;
+  border: 1px #FFFFFF solid;
+
+}
+option{
+  color: black;
 }
 input{
   color:  #FFFFFF;
 }
-.mat-form-field-appearance-fill .mat-form-field-infix{
-  color: #FFFFFF;
-
-}
-.mat-form-field{
-  background-color: #0000004C;
-  width: 80%;
-  padding-bottom: 0;
-}
-.mat-form-field-flex{
-  background-color: none;
-}
-
-.mat-form-field-wrapper{
-  /* padding-bottom: 5em !important; */
-  margin-bottom: 20px;
-
-}
-.mat-form-field-appearance-fill .mat-form-field-infix {
-  padding: 0.25em 0px 1.75em 0px;
-}
-.mat-form-field-appearance-fill .mat-form-field-flex{
-
-  margin-bottom: 1em;
-  background-color: #0000004C !important;
-}
-.mat-form-field-wrapper{
-  padding-bottom: 0 !important;
-}
-::ng-deep .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick{
-    color: red!important;
-    opacity: 0.8!important;
-}
-
-
-::ng-deep .mat-input-element {
-    caret-color: red!important;
-}
-
-
-::ng-deep .mat-form-field-invalid .mat-input-element, .mat-warn .mat-input-element {
-    caret-color: red!important;
-}
-
-
-::ng-deep .mat-form-field-label {
-    color: #FFFFFF!important;
-
-}
-
-
-::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
-    color: red!important;
-}
-
-
-::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-label {
-    color: red!important;
-}
-
-
-::ng-deep .mat-focused .mat-form-field-label {
-  /*change color of label*/
-  color: red !important;
-  font-size: 25px;
- }
-
- ::ng-deep.mat-form-field-underline {
-  /*change color of underline*/
-  background-color: red !important;
-  font-size: 25px;
-}
-.mat-error{
-  color: red !important;
-}
-::ng-deep.mat-form-field-ripple {
- /*change color of underline when focused*/
- background-color: red !important;;
-}
 form textarea{
   width: 80%;
+  height: 45%;
   padding: 1.5%;
-
   color: #FFFFFF;
-  margin: 0;
-
-  border: 0;
+  margin-top: 2%;
   margin-bottom: 3%;
+  backdrop-filter: blur(1px);
+  border: 0;
+  background-color: #0000004C;
+  border: 1px #FFFFFF solid;
+
 }
 textarea.mat-input-element{
   padding:0 0 40px !important;
 }
 form button{
-  margin-top: 5%;
   background-color: #0000004C ;
   width: 100%;
   color: #FFFFFF;
@@ -197,8 +147,7 @@ button a:hover{
     padding:0 0 240px  !important;
   }
   form button{
-    padding: 12px;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .form{
@@ -208,5 +157,26 @@ button a:hover{
   .mat-error{
     color: red !important;
     font-size: 20px;
+  }
+  .input-error{
+
+    color: red;
+    font-size: 1.3vw;
+    margin: -10px 0 0 -27vw !important;
+  }
+  #error-email{
+    margin: -10px 0 0 -24vw !important;
+  }
+}
+
+@media (max-width: 1024px){
+  form input{
+    border: none;
+  }
+  form select{
+    border: none;
+  }
+  form textarea{
+    border: none;
   }
 }
