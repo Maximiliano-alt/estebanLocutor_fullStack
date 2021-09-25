@@ -13,6 +13,8 @@ import { MaterialModule } from './material/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { MultimediaComponent } from './multimedia/components/multimedia.component';
 import { ContractComponent } from './contract/components/contract.component';
+import { FormsModule } from '@angular/forms';
+import { EmailMessageService } from './services/email-message.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,10 +22,10 @@ import { ContractComponent } from './contract/components/contract.component';
     AboutMeComponent,
     ServicesLocutorComponent,
     MultimediaComponent,
-    ContractComponent,
     AboutMeComponent,
     ContactComponent,
     GalleryComponent,
+    ContractComponent
   ],
   imports: [
     BrowserModule,
@@ -31,9 +33,10 @@ import { ContractComponent } from './contract/components/contract.component';
     BrowserAnimationsModule,
     SharedModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [EmailMessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

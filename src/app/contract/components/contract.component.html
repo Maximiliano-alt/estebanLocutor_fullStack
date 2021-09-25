@@ -4,12 +4,12 @@
   <h1>Solicita tu cotización</h1>
   <h2>_______</h2>
   <h3>Ponte en contacto conmigo</h3>
-  <form [formGroup]="form" (ngSubmit)="saveInfo($event)" action="https://formsubmit.co/maxespindola20@gmail.com" class="form" method="POST">
+  <form [formGroup]="form" (ngSubmit)="contactForm(form.value)" action="https://formsubmit.co/maxespindola20@gmail.com"  class="form" method="POST">
     <div class="grid">
       <div class="separate1">
         <mat-form-field class="mat-input" appearance="fill">
           <mat-label>Nombre</mat-label>
-          <input type="name" matInput formControlName="name">
+          <input type="name" matInput formControlName="name" name="name">
           <mat-error *ngIf="form.get('name')?.hasError('required')">
             * Campo <strong>requerido</strong>
           </mat-error>
@@ -17,7 +17,7 @@
 
         <mat-form-field class="mat-input" appearance="fill">
           <mat-label>Teléfono</mat-label>
-          <input type="name" matInput formControlName="phone">
+          <input type="name" matInput formControlName="phone" name="phone">
           <mat-error *ngIf="form.get('phone')?.hasError('required')">
             * Campo <strong>requerido</strong>
           </mat-error>
@@ -25,7 +25,7 @@
 
         <mat-form-field class="mat-input" appearance="fill">
           <mat-label>Email</mat-label>
-          <input type="name" matInput formControlName="email">
+          <input type="name" matInput formControlName="email" name="email">
           <mat-error *ngIf="form.get('email')?.hasError('required')">
             * Campo <strong>requerido</strong>
           </mat-error>
@@ -36,7 +36,7 @@
         </mat-form-field>
         <mat-form-field class="mat-input" appearance="fill">
           <mat-label>País</mat-label>
-          <input type="name" matInput formControlName="country">
+          <input type="name" matInput formControlName="country" name="country">
           <mat-error *ngIf="form.get('country')?.hasError('required')">
             * Campo <strong>requerido</strong>
           </mat-error>
@@ -44,7 +44,7 @@
 
         <mat-form-field class="mat-input" appearance="fill">
           <mat-label>Ciudad</mat-label>
-          <input type="name" matInput formControlName="city">
+          <input type="name" matInput formControlName="city" name="city">
           <mat-error *ngIf="form.get('city')?.hasError('required')">
             * Campo <strong>requerido</strong>
           </mat-error>
@@ -54,15 +54,15 @@
       <div class="separate2">
         <mat-form-field class="mat-input" appearance="fill">
           <mat-label>Empresa</mat-label>
-          <input type="name" matInput formControlName="enterprise">
+          <input type="name" matInput formControlName="enterprise" name="enterprise">
           <mat-error *ngIf="form.get('enterprise')?.hasError('required')">
-            * Campo <strong>requerido</strong>
+            * Campo <strong>requerido</strong>, si no aplica poner nombre
           </mat-error>
         </mat-form-field>
 
         <mat-form-field class="mat-input" appearance="fill">
           <mat-label>Servicio</mat-label>
-          <mat-select matInput formControlName="service">
+          <mat-select matInput formControlName="service" name="service">
             <mat-option value="Locución comercial TV y radio">Locución comercial para TV y radio</mat-option>
             <mat-option value="Personajes TV y radio">Personajes para TV y radio</mat-option>
             <mat-option value="Locución comercial medios digitales">Locución comercial para medios digitales</mat-option>
@@ -81,7 +81,7 @@
 
         <mat-form-field class="example-full-width" appearance="fill">
           <mat-label>Deja tú mensaje...</mat-label>
-          <textarea matInput   formControlName="message"></textarea>
+          <textarea matInput   formControlName="message" name="message"></textarea>
           <mat-error *ngIf="form.get('message')?.hasError('required')">
             * Campo <strong>requerido</strong>
           </mat-error>

@@ -5,6 +5,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { FormsModule,ReactiveFormsModule  } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
 @NgModule({
   declarations: [],
   imports: [
@@ -14,7 +15,8 @@ import {MatSelectModule} from '@angular/material/select';
     ReactiveFormsModule,
     SwiperModule,
     MatInputModule,
-    MatSelectModule
+    MatSelectModule,
+    MatFormFieldModule
   ],
   exports:[
     MatIconModule,
