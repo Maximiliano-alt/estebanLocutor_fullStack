@@ -4,17 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/components/home/home.component';
-import { BannerComponent } from './home/components/banner/banner.component';
+
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactComponent } from './contact/contact.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ServicesLocutorComponent } from './services-locutor/services-locutor.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    BannerComponent,
     AboutMeComponent,
     ContactComponent,
     GalleryComponent,
@@ -22,7 +22,8 @@ import { ServicesLocutorComponent } from './services-locutor/services-locutor.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
