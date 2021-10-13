@@ -1,1 +1,71 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background: url("src\assets\images\foto-portada.jpg")    ;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+    height: max-content;
+    position: relative;
+    margin: 0;
+
+  }
+
+  /* Imagen utilizada en pantallas de anchura 393 px y menor */
+  @media (max-width: 393px),(min-width: 393px){
+
+    body {
+        background: url("src\assets\images\foto-portada.jpg")  ;
+
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: fixed;
+        background-size: cover;
+        height: max-content;
+        margin: 0;
+
+
+    }
+
+  }
+  /* Imagen utilizada en pantallas de anchura 480 px y superior */
+  @media (min-width: 430px),(max-width: 430px) {
+    body {
+        background: url("src\assets\images\foto-portada.jpg") transparent padding-box;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center ;
+        background-attachment: fixed;
+        background-size: cover;
+        margin: 0;
+    }
+
+  }
+  @media (max-width:768px),(min-width:768px) {
+    body {
+        background-image: url("src\assets\images\foto-portada.jpg") ;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center ;
+        background-attachment: fixed;
+        background-size: cover;
+        margin: 0;
+    }
+
+}
+  /* Imagen utilizada en pantallas de anchura 1200 px y superior */
+  @media (min-width: 1200px) {
+    body {
+        background: url("src\assets\images\foto-portada.jpg");/*cambiar imagen mas amplia para pantallas mas anchas*/
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center ;
+        background-attachment: fixed;
+        background-size: contain;
+    }
+
+  }
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
