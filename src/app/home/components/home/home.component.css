@@ -17,8 +17,26 @@ head > #title{
   margin-top: 10px;
 }
 .social{
-
   margin-right: 5px;
   text-decoration: none;
   color: #F2ECEB;
+}
+.container{
+  background: rgba(13, 0, 0, 0.39);
+  display: flex;
+  top:0px;
+  right: 0px;
+  bottom:0px;
+  left:0px;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0, 380%);
+  height: 86px;
+  text-align: left;
+}
+.container > h1{
+  font-size: 30px;
+  color: #FFFFFF;
+  font-family: Felix Titling;
+
 }
