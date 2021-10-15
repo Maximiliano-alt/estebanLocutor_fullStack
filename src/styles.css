@@ -12,7 +12,7 @@ body {
   }
 
   /* Imagen utilizada en pantallas de anchura 393 px y menor */
-  @media (max-width: 393px),(min-width: 393px){
+  @media (max-width: 375px),(min-width: 375px){
 
     body {
         background: url("src\assets\images\foto-portada.jpg")  ;
@@ -29,7 +29,7 @@ body {
 
   }
   /* Imagen utilizada en pantallas de anchura 480 px y superior */
-  @media (min-width: 430px),(max-width: 430px) {
+  @media (min-width: 430px) {
     body {
         background: url("src\assets\images\foto-portada.jpg") transparent padding-box;
         background-color: transparent;
@@ -41,14 +41,14 @@ body {
     }
 
   }
-  @media (max-width:768px),(min-width:768px) {
+  @media (min-width:768px) {
     body {
         background-image: url("src\assets\images\foto-portada.jpg") ;
         background-color: transparent;
         background-repeat: no-repeat;
         background-position: center ;
         background-attachment: fixed;
-        background-size: cover;
+        background-size: contain;
         margin: 0;
     }
 
