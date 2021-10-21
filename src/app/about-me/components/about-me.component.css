@@ -1,0 +1,39 @@
+.arrow{
+  color: #FFFFFF;
+  top: 64px;
+}
+section{
+  min-height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.container{
+  min-width: 339px;
+  min-height: 467px;
+  word-wrap: break-word;
+  overflow: hidden;
+  background-color:rgba(13, 0, 0, 0.39) ;
+  box-shadow: 10px 10px 6px #00000029;
+
+}
+.container h1{
+
+  padding: 10px;
+  color: #FFFFFF;
+  text-align: left;
+  font-family: normal normal bold 25px/29px Gill Sans MT;
+  font-size: 25px;
+}
+.container p{
+
+  padding-left: 14px;
+  padding-right: 14px;
+  color: #ded9dc;
+  text-align: left;
+  font-family: 'Quicksand', sans-serif;
+
+
+}

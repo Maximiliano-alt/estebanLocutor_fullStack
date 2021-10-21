@@ -2,17 +2,16 @@ head{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  color:#F2ECEB;
+  color:#e0e0e0;
   background-color: #323232;
   margin: 0;
 
 }
-head > h2{
-    margin: 10px 20px;
-    font-family:  filmotype-maxwell, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
+
+head > img{
+  width: 124px;
+  height: 20px;
+   padding:10px ;
 }
 .social-media{
   margin-right: 20px;
@@ -38,7 +37,7 @@ head > h2{
 }
 .container > h1{
   font-size: 30px;
-  color: #FFFFFF;
+  color: #e0e0e0;
   font-family: Felix Titling;
 
 }
