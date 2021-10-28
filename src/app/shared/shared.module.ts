@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { MaterialModule } from '../material/material.module';
-
+import { SwiperModule } from 'swiper/angular';
 @NgModule({
   declarations: [
     HeaderComponent
@@ -11,7 +11,8 @@ import { MaterialModule } from '../material/material.module';
   imports: [
     CommonModule,
     RouterModule,
-    MaterialModule
+    MaterialModule,
+    SwiperModule
   ],
   exports:[
     HeaderComponent

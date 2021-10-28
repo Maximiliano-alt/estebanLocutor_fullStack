@@ -36,12 +36,12 @@ body {
         background-repeat: no-repeat;
         background-position: center ;
         background-attachment: fixed;
-        background-size: cover;
+        background-size: contain;
         margin: 0;
     }
 
   }
-  @media (min-width:768px) {
+  @media (min-width:375px) {
     body {
         background-image: url("src\assets\images\foto-portada.jpg") ;
         background-color: transparent;
