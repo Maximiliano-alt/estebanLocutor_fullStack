@@ -3,19 +3,23 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { MaterialModule } from '../material/material.module';
-import { SwiperModule } from 'swiper/angular';
+import { BannerComponent } from '../home/components/banner/banner.component';
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    BannerComponent
+
   ],
   imports: [
     CommonModule,
     RouterModule,
     MaterialModule,
-    SwiperModule
+
   ],
   exports:[
-    HeaderComponent
+    HeaderComponent,
+    BannerComponent
+
   ]
 })
 export class SharedModule { }

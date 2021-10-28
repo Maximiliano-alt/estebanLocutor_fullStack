@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class BannerComponent implements OnInit {
 
   images: string[] = [
-    '.\assets\images\esteban-banner.png'
-  ];
+    'assets/images/esteban-banner.png',
+
+    ];
   constructor() { }
 
   ngOnInit(): void {
