@@ -1,10 +1,73 @@
 <app-header></app-header>
-<body>
-  <a routerLink="" ><mat-icon class="arrow"> keyboard_backspace</mat-icon></a>
-  <section>
-    <div class="container">
+  <!-- <a routerLink="" ><mat-icon class="arrow"> keyboard_backspace</mat-icon></a> -->
+  <section *ngIf="container2; else whyHire">
+    <div class="container"  *ngIf="container; else more">
       <h1>Sobre mí</h1>
-      <p>Esteban Cáceres es un locutor, productor musical, compositor y cantante, ex vocalista de la banda Musso. Titulado en la universidad Uniacc de la carrera de Música y Sonido, especializado en el área de la producción musical, también estudió técnica vocal en la Escuela de Artes Vocales. Además, tiene diplomados en Liderazgo y Emprendimiento, Gestión de Empresa, Marketing, Industrias de la Música y un curso de Evaluación de Decisiones Estratégicas en la Pontificia Universidad Católica. Como locutor, ha logrado tener presencia internacional, grabando para México, Chile, Colombia, Argentina, Ecuador, Guatemala y Perú. Ha trabajado para grandes marcas, tales como Hershey´s, Waldo´s, Frutaris, Papel higiénico Swan, Unired, Mayorista 10, Alvi, Wolf Channel, Radio Acciona, Fruta Fresca, Unired, Samsung, y Mastercard, entre otros. Su misión es, a través de su voz, ayudar a las marcas a entregar su mensaje a las personas de una forma cercana, estrechando las distancias entre cliente y consumidor. Su visión es ser la voz que ayude a las marcas a alcanzar sus objetivos, ser una voz que logre influir en el mundo de forma positiva. Sus valores son informar, entretener y educar, con una voz cercana y con un sello propio.</p>
+      <h2>____</h2>
+      <p>Esteban Cáceres es un locutor, productor musical, compositor y cantante, ex vocalista de la banda Musso. Titulado en la universidad Uniacc de la carrera de Música y Sonido, especializado en el área de la producción musical, también estudió técnica vocal en la Escuela de Artes Vocales. Además, tiene diplomados en Liderazgo y Emprendimiento, Gestión de Empresa, Marketing, Industrias de la Música y un curso de Evaluación de Decisiones Estratégicas en la Pontificia Universidad Católica. Como locutor, ha logrado tener presencia internacional, grabando para México, Chile, Colombia, Argentina, Ecuador, Guatemala y Perú. Ha trabajado para grandes marcas, tales como Hershey´s, Waldo´s, Frutaris, Papel higiénico Swan, Unired, Mayorista 10, Alvi, Wolf Channel, Radio Acciona, Fruta Fresca, Unired, Samsung, y Mastercard, entre otros.</p>
     </div>
+    <ng-template #more>
+      <div class="container">
+        <div class="act-2">
+          <h1>Misión</h1>
+          <h2>____</h2>
+          <p>Su misión es, a través de su voz, ayudar a las marcas a entregar su mensaje a las personas de una forma cercana, estrechando las distancias entre cliente y consumidor.</p>
+          <h1>Valores</h1>
+          <h2>____</h2>
+          <p>Sus valores son informar, entretener y educar, con una voz cercana y con un sello propio.</p>
+          <h1>Visión</h1>
+          <h2>____</h2>
+          <p>Su visión es ser la voz que ayude a las marcas a alcanzar sus objetivos, ser una voz que logre influir en el mundo de forma positiva.</p>
+
+        </div>
+
+        <div class="act-1">
+          <h1>Sobre mí</h1>
+          <h2>____</h2>
+          <p>Esteban Cáceres es un locutor, productor musical, compositor y cantante, ex vocalista de la banda Musso. Titulado en la universidad Uniacc de la carrera de Música y Sonido, especializado en el área de la producción musical, también estudió técnica vocal en la Escuela de Artes Vocales. Además, tiene diplomados en Liderazgo y Emprendimiento, Gestión de Empresa, Marketing, Industrias de la Música y un curso de Evaluación de Decisiones Estratégicas en la Pontificia Universidad Católica. Como locutor, ha logrado tener presencia internacional, grabando para México, Chile, Colombia, Argentina, Ecuador, Guatemala y Perú. Ha trabajado para grandes marcas, tales como Hershey´s, Waldo´s, Frutaris, Papel higiénico Swan, Unired, Mayorista 10, Alvi, Wolf Channel, Radio Acciona, Fruta Fresca, Unired, Samsung, y Mastercard, entre otros.</p>
+
+        </div>
+      </div>
+      </ng-template>
   </section>
-</body>
+  <ng-template #whyHire>
+    <section>
+      <div class="container">
+        <h1>Por qué contratarme</h1>
+          <h2>____</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit fusce, odio inceptos pretium convallis dictum a vestibulum, lacus quisque elementum neque sapien velit consequat. Suspendisse torquent tincidunt diam primis fringilla orci ut pellentesque phasellus netus sagittis, nibh viverra placerat pulvinar sapien luctus felis massa iaculis porttitor. Eros gravida habitant quam fermentum hac curae, vulputate integer natoque sociis mi id dis, viverra turpis congue tristique sed.</p>
+      </div>
+    </section>
+  </ng-template>
+
+  <div *ngIf="container2; else banner">
+    <div class="more">
+      <a (click)="changeContainer()">Más</a>
+    </div>
+    <div class="blocks">
+      <div class="block1">
+        <h1>Misión</h1>
+        <h2>____</h2>
+        <p>Su misión es, a través de su voz, ayudar a las marcas a entregar su mensaje a las personas de una forma cercana, estrechando las distancias entre cliente y consumidor.</p>
+      </div>
+      <div class="block2">
+        <h1>Visión</h1>
+        <h2>____</h2>
+        <p>Su visión es ser la voz que ayude a las marcas a alcanzar sus objetivos, ser una voz que logre influir en el mundo de forma positiva.</p>
+      </div>
+      <div class="block3">
+        <h1>Valores</h1>
+        <h2>____</h2>
+        <p>Sus valores son informar, entretener y educar, con una voz cercana y con un sello propio.</p>
+      </div>
+    </div>
+    <div class="why-hire">
+      <a
+       (click)="changeContainer2()">Por qué contratarme</a>
+    </div>
+  </div>
+  <ng-template #banner>
+    <div>
+      <app-banner></app-banner>
+    </div>
+  </ng-template>

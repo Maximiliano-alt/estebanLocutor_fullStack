@@ -5,12 +5,14 @@ import { AboutMeRoutingModule } from './about-me-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { MaterialModule } from '../material/material.module';
 @NgModule({
-  declarations: [],
+  declarations: [
+  ],
   imports: [
     CommonModule,
     AboutMeRoutingModule,
     SharedModule,
-    MaterialModule
+    MaterialModule,
+
   ]
 })
 export class AboutMeModule { }
