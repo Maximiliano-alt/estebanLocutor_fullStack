@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { MaterialModule } from '../material/material.module';
-
+import { SwiperModule } from 'swiper/angular';
 @NgModule({
   declarations: [
   ],
@@ -11,7 +11,8 @@ import { MaterialModule } from '../material/material.module';
     CommonModule,
     HomeRoutingModule,
     SharedModule,
-    MaterialModule
+    MaterialModule,
+    SwiperModule
   ]
 })
 export class HomeModule { }
