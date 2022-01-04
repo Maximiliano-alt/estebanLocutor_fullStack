@@ -1,0 +1,89 @@
+.container{
+  justify-content: center;
+}
+.container h1{
+  height: 10px;
+  margin: 0;
+  padding-left: 50px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'gill-sans-nova', sans-serif;
+  font-size: 18px;
+  margin-right: 50px;
+  margin-top: 24px;
+}
+.container h2{
+  color: #FFFFFF;
+  height: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 10px;
+  font-weight: 3px;
+  opacity: 0.5;
+}
+.container h3{
+  padding-right: 55px;
+  height: 10px;
+  margin: 0;
+  padding-left: 100px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  margin-right: 40px;
+  margin-top: 24px;
+  opacity: 0.8;
+  visibility: hidden;
+}
+form input{
+  width: 80%;
+  padding: 1.5%;
+  background-color: #0000004C;
+  color: #FFFFFF;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  backdrop-filter: blur(1px);
+  border: 0;
+}
+form textarea{
+  width: 80%;
+  padding: 1.5%;
+  background-color: #0000004C;
+  color: #FFFFFF;
+  margin: 0;
+  backdrop-filter: blur(1px);
+  border: 0;
+  margin-bottom: 3%;
+}
+form button{
+  background-color: #0000004C ;
+  width: 100%;
+  color: #FFFFFF;
+  border:0 ;
+  padding: 8px;
+  font-family: 'Quicksand', sans-serif;
+}
+ ::placeholder{
+   color: #FFFFFF;
+   font-family: 'Quicksand', sans-serif;
+}
+@media (min-width: 1024px){
+  .container h1{
+    margin-top: 0;
+    font-size: 40px;
+  }
+  .container h2{
+    font-size: 20px;
+    margin-top: 1%;
+  }
+  .container h3{
+    visibility: visible;
+    margin-bottom: 3%;
+  }
+  form input, form textarea{
+
+    margin-top: 0;
+    border: 1px solid #FFFFFF;
+  }
+
+}
