@@ -4,12 +4,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/components/home/home.component';
 import { AboutMeComponent } from './about-me/components/about-me.component';
-import { ContactComponent } from './contact/contact.component';
+import { ContactComponent } from './contact/components/contact.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import { ServicesLocutorComponent } from './services-locutor/services-locutor.component';
+import { ServicesLocutorComponent } from './services-locutor/components/services-locutor.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { MaterialModule } from './material/material.module';
+import { HttpClientModule } from '@angular/common/http';
+import { MultimediaComponent } from './multimedia/components/multimedia.component';
+import { ContractComponent } from './contract/components/contract.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,14 +20,17 @@ import { MaterialModule } from './material/material.module';
     AboutMeComponent,
     ContactComponent,
     GalleryComponent,
-    ServicesLocutorComponent
+    ServicesLocutorComponent,
+    MultimediaComponent,
+    ContractComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
