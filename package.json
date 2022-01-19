@@ -8,6 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+  "tags": [
+    "swiper"
+  ],
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.2.0",
@@ -20,6 +23,9 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "@splidejs/splide": "^3.6.9",
+    "@splidejs/splide-extension-url-hash": "^0.2.1",
+    "ngx-splide": "^0.0.15",
     "rxjs": "~6.6.0",
     "swiper": "^7.2.0",
     "tslib": "^2.3.0",

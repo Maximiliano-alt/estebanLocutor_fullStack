@@ -33,6 +33,9 @@ body{
 .banner{
   width: 400px;
 }
+.swiper-container{
+  background: rgba(13, 0, 0, 0.39);
+}
 @media (min-width: 450px) {
   img{
     width: 70%;
