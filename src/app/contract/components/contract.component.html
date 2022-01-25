@@ -4,19 +4,70 @@
   <h1>Solicita tu cotización</h1>
   <h2>_______</h2>
   <h3>Ponte en contacto conmigo</h3>
-  <form action="" class="form">
-    <input type="text" name="nombre "placeholder="Nombre" id="">
-    <input type="text" name="telefono" placeholder="Teléfono" id="">
-    <input type="text" name="email" placeholder="Mail" id="">
-    <input type="text" name="pais" placeholder="País" id="">
-    <input type="text" name="ciudad" placeholder="Ciudad" id="">
+  <form [formGroup]="form" (submit)="sendToEmail()" action="https://formsubmit.co/maxespindola20@gmail.com" class="form" method="POST">
+    <div class="grid">
+      <div class="separate1">
+        <mat-form-field class="mat-input" appearance="fill">
+          <mat-label>Nombre</mat-label>
+          <input type="name" matInput formControlName="name">
+          <!-- <mat-error *ngIf="name.hasError('required')">
+            Campo <strong>requerido</strong>
+          </mat-error> -->
+        </mat-form-field>
 
-    <div class="separate">
-      <input type="text" name="empresa" placeholder="Empresa" id="">
-      <input type="text" name="servicio" placeholder="Servicio" id="">
-      <textarea name="" id="" cols="30" rows="7" placeholder="Deja tú mensaje..."></textarea>
+        <mat-form-field class="mat-input" appearance="fill">
+          <mat-label>Teléfono</mat-label>
+          <input type="name" matInput formControlName="phone">
+        </mat-form-field>
+
+        <mat-form-field class="mat-input" appearance="fill">
+          <mat-label>Email</mat-label>
+          <input type="name" matInput formControlName="email">
+        </mat-form-field>
+
+        <mat-form-field class="mat-input" appearance="fill">
+          <mat-label>País</mat-label>
+          <input type="name" matInput formControlName="country">
+        </mat-form-field>
+
+        <mat-form-field class="mat-input" appearance="fill">
+          <mat-label>Ciudad</mat-label>
+          <input type="name" matInput formControlName="city">
+        </mat-form-field>
+
+        <!-- <input type="text"  name="nombre "placeholder="Nombre" id="" formControlName="nombre" >
+        <input type="text" name="telefono" placeholder="Teléfono" id="" formControlName="telefono" >
+        <input type="text" name="email" placeholder="Mail" id="" formControlName="email" >
+        <input type="country" name="pais" placeholder="País" id=""  formControlName="pais" >
+        <input type="text" name="ciudad" placeholder="Ciudad" id="" formControlName="ciudad" > -->
+      </div>
+
+      <div class="separate2">
+        <mat-form-field class="mat-input" appearance="fill">
+          <mat-label>Empresa</mat-label>
+          <input type="name" matInput formControlName="enterprise">
+        </mat-form-field>
+
+        <mat-form-field class="mat-input" appearance="fill">
+          <mat-label>Servicio</mat-label>
+          <mat-select>
+            <mat-option value="one">Servicio</mat-option>
+            <mat-option value="two">Second option</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Deja tú mensaje...</mat-label>
+          <textarea matInput   formControlName="message"></textarea>
+        </mat-form-field>
+        <!-- <input type="text" name="empresa" placeholder="Empresa" id="" formControlName="empresa">
+        <input type="text" name="servicio" placeholder="Servicio" id="" formControlName="servicio">
+        <textarea name="mensaje" id="" cols="30" rows="7" placeholder="Deja tú mensaje..." formControlName="mensaje"></textarea> -->
+      </div>
     </div>
 
-    <button type="submit" >Enviar</button>
+
+    <button type="submit" value="Enviar" [disabled]="form.invalid">Enviar</button>
+    <div>validoL: {{form.valid}}</div>
   </form>
 </div>

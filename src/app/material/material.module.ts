@@ -4,6 +4,7 @@ import { SwiperModule } from "swiper/angular";
 import {MatIconModule} from '@angular/material/icon';
 import { FormsModule,ReactiveFormsModule  } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
 @NgModule({
   declarations: [],
   imports: [
@@ -12,14 +13,16 @@ import {MatInputModule} from '@angular/material/input';
     FormsModule,
     ReactiveFormsModule,
     SwiperModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule
   ],
   exports:[
     MatIconModule,
     FormsModule,
     ReactiveFormsModule,
     SwiperModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule
   ]
 })
 export class MaterialModule { }
