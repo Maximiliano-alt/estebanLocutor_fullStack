@@ -1,4 +1,7 @@
 module.exports = {
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
+  },
   root: true,
   env: {
     es6: true,
