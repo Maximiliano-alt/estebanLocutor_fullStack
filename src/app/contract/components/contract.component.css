@@ -49,6 +49,7 @@ input{
 }
 .mat-form-field-appearance-fill .mat-form-field-infix{
   color: #FFFFFF;
+
 }
 .mat-form-field{
   background-color: #0000004C;
@@ -60,12 +61,15 @@ input{
 }
 
 .mat-form-field-wrapper{
-  padding-bottom: 1em !important;
+  /* padding-bottom: 5em !important; */
+  margin-bottom: 20px;
 
 }
-
+.mat-form-field-appearance-fill .mat-form-field-infix {
+  padding: 0.25em 0px 1.75em 0px;
+}
 .mat-form-field-appearance-fill .mat-form-field-flex{
-  padding:0.3em !important;
+
   margin-bottom: 1em;
   background-color: #0000004C !important;
 }
@@ -133,7 +137,7 @@ form textarea{
   margin-bottom: 3%;
 }
 textarea.mat-input-element{
-  padding: 25px 0 !important;
+  padding:0 0 40px !important;
 }
 form button{
   margin-top: 5%;
@@ -186,7 +190,6 @@ button a:hover{
   }
 
   .mat-form-field-appearance-fill .mat-form-field-flex{
-    padding:1.3em !important;
     font-size: 25px;
   }
 
@@ -202,5 +205,8 @@ button a:hover{
     justify-content: space-between;
 
   }
-
+  .mat-error{
+    color: red !important;
+    font-size: 20px;
+  }
 }
