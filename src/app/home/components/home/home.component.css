@@ -1,0 +1,80 @@
+body{
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.container{
+  border: 1px solid #FFFF;
+  background: rgba(13, 0, 0, 0.39);
+  display: flex;
+  top:0px;
+  right: 0px;
+  bottom:0px;
+  left:0px;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0, 0%);
+  height: 50px;
+  text-align: left;
+
+}
+ img{
+  width: 80%;
+  margin-top: 10%;
+  color: #FFFF;
+
+}
+.container > h1{
+  font-size: 12px;
+  color: #FFFF;
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 15px;
+
+}
+.banner{
+  width: 400px;
+}
+.swiper-container{
+  background: rgba(13, 0, 0, 0.39);
+}
+@media (min-width: 450px) {
+  img{
+    width: 70%;
+    height: 40%;
+    margin-top: 5%;
+  }
+}
+@media (min-width: 650px) {
+  img{
+    width: 50%;
+    height: 30%;
+    margin-top: 5%;
+  }
+}
+@media (min-width: 750px) {
+  img{
+    width: 60%;
+    height: 40%;
+    margin-top: 3%;
+  }
+}
+@media (min-width: 1024px) {
+  img{
+    width: 50%;
+    height: 55%;
+    margin-top: 0;
+  }
+  .container{
+    border-bottom:1px solid #FFFF;
+    transform: translate(0, 0);
+    height: 76px;
+  }
+  .container > h1{
+    font-size: 25px;
+  }
+}
+@media (max-width: 368px) {
+  .container > h1{
+    font-size: 10px;
+  }
+}
+

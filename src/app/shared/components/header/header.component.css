@@ -1,0 +1,146 @@
+head{
+  background: #00000033;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color:#FFFFFF;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-bottom: 1px solid #FFFFFF;
+  height: 65px;
+}
+.head-container{
+  flex-direction: column;
+  justify-content: space-between;
+}
+.head-container a h1{
+   font-family:  dazzle-unicase, sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 15px;
+   color: #FFFFFF;
+   padding-left: 19px;
+   height: 3px;
+}
+.head-container a h2{
+  font-family:quicksand, sans-serif ;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  height: 18px;
+  padding-left: 12px;
+  text-decoration: none;
+  margin-top: 2%;
+}
+.head-container a{
+  text-decoration: none;
+}
+.social-media{
+  margin-right: 5px;
+  margin-top: 8px;
+
+}
+.social{
+  height: 22px;
+  width: 22px;
+  margin-right: 12px;
+  text-decoration: none;
+  filter: invert(100%) sepia(100%) saturate(38%) hue-rotate(254deg) brightness(110%) contrast(110%);
+}
+.container-header1{
+  display: none;
+}
+.container-header2{
+  height: 43px;
+  justify-content: center;
+  display: flex;
+  background: #00000033;
+  color:#FFFFFF;
+  border: 1px solid #FFFFFF;
+
+}
+a:hover{
+  background-color: #6d238a;
+  border-radius: 10px;
+}
+.field-text{
+  display: flex;
+  padding: 0px;
+  margin: 10px;
+  position: relative;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  height: 16px;
+  font-size: 30px;
+}
+.nav{
+  justify-content: center;
+  position: relative;
+  margin-right: 12px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: Quicksand, sans-serif;
+  /* padding: 7px; */
+}
+
+@media (min-width: 1024px) {
+  body{
+    width: 80%;
+  }
+  .social-media{
+    display: none;
+  }
+  head{
+  background: #00000033;
+  display: flex;
+  top:0px;
+  right: 0px;
+  bottom:0px;
+  left:0px;
+  height: 60px;
+  text-align: left;
+  }
+  .container-header1{
+    height: 43px;
+    justify-content: center;
+    display: block;
+    transform: translate(300px,-40px);
+    color:#FFFFFF;
+  }
+  .container-header2{
+    visibility: hidden;
+  }
+  .head-container a h1{
+    margin-left:41px;
+    margin-bottom: 3%;
+    font-size: 20px;
+  }
+  .head-container a h2{
+    margin-left:65px;
+    font-size: 15px;
+  }
+  .nav{
+    margin-right: 60px;
+    font-size: 20px;
+    border-radius: 200px;
+  }
+
+}
+
+
+
+@media (max-width: 320px) {
+  .head-container > h1{
+    font-size: 12px;
+  }
+  .head-container > h2{
+    font-size: 10px;
+  }
+  .container-header2{
+    font-size: 11px;
+  }
+}
+
