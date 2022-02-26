@@ -6,7 +6,6 @@ head{
   color:#FFFFFF;
   justify-content: space-between;
   padding-top: 10px;
-  border-bottom: 1px solid #FFFFFF;
   height: 65px;
 }
 .head-container{
@@ -78,14 +77,26 @@ a:hover{
 .nav{
   justify-content: center;
   position: relative;
-  margin-right: 12px;
+  margin-right: 6vw;
   font-size: 15px;
   text-decoration: none;
   color: #FFFFFF;
   font-family: Quicksand, sans-serif;
   /* padding: 7px; */
 }
-
+#nav-contact{
+  margin-right: 0;
+}
+@media (max-width: 472px) {
+  .container-header2 a{
+    font-size: 3vw;
+  }
+}
+@media (min-width: 650px){
+  .nav{
+    margin-right: 9vw;
+  }
+}
 @media (min-width: 1024px) {
   body{
     width: 80%;
