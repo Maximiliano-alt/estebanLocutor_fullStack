@@ -7,23 +7,27 @@
   <form [formGroup]="form" (ngSubmit)="contactForm(form.value)" action="https://formsubmit.co/maxespindola20@gmail.com"  class="form" method="POST">
     <div class="grid">
       <div class="separate1">
-        <mat-form-field class="mat-input" appearance="fill">
+        <!-- <mat-form-field class="mat-input" appearance="fill">
           <mat-label>Nombre</mat-label>
           <input type="name" matInput formControlName="name" name="name">
           <mat-error *ngIf="form.get('name')?.hasError('required')">
             * Campo <strong>requerido</strong>
           </mat-error>
-        </mat-form-field>
+        </mat-form-field> -->
+        <input type="name" placeholder="Nombre"  formControlName="name" name="name">
+        <p  *ngIf="form.get('name')?.invalid && form.get('name')?.touched" class="input-error"><strong>* Campo requerido</strong> </p>
 
-        <mat-form-field class="mat-input" appearance="fill">
+        <!-- <mat-form-field class="mat-input" appearance="fill">
           <mat-label>Teléfono</mat-label>
           <input type="name" matInput formControlName="phone" name="phone">
           <mat-error *ngIf="form.get('phone')?.hasError('required')">
             * Campo <strong>requerido</strong>
           </mat-error>
-        </mat-form-field>
+        </mat-form-field> -->
+        <input type="name" placeholder="Teléfono"  formControlName="phone" name="phone">
+        <p  *ngIf="form.get('phone')?.invalid && form.get('phone')?.touched" class="input-error"><strong>* Campo requerido</strong> </p>
 
-        <mat-form-field class="mat-input" appearance="fill">
+        <!-- <mat-form-field class="mat-input" appearance="fill">
           <mat-label>Email</mat-label>
           <input type="name" matInput formControlName="email" name="email">
           <mat-error *ngIf="form.get('email')?.hasError('required')">
@@ -33,34 +37,61 @@
             <strong>Ingrese un correo válido</strong>
           </mat-error>
 
-        </mat-form-field>
-        <mat-form-field class="mat-input" appearance="fill">
+        </mat-form-field> -->
+        <input type="name"  placeholder="Correo" formControlName="email" name="email">
+        <p  *ngIf="form.get('email')?.hasError('required') && form.get('email')?.touched" class="input-error"><strong>* Campo requerido</strong> </p>
+        <p  *ngIf="form.get('email')?.hasError('pattern') && form.get('email')?.touched" class="input-error" id="error-email"><strong>ej: nombre@email.com</strong> </p>
+
+        <!-- <mat-form-field class="mat-input" appearance="fill">
           <mat-label>País</mat-label>
           <input type="name" matInput formControlName="country" name="country">
           <mat-error *ngIf="form.get('country')?.hasError('required')">
             * Campo <strong>requerido</strong>
           </mat-error>
-        </mat-form-field>
+        </mat-form-field> -->
+        <input type="name" placeholder="País" formControlName="country" name="country">
+        <p  *ngIf="form.get('country')?.hasError('required') && form.get('country')?.touched" class="input-error"><strong>* Campo requerido</strong> </p>
 
-        <mat-form-field class="mat-input" appearance="fill">
+        <!-- <mat-form-field class="mat-input" appearance="fill">
           <mat-label>Ciudad</mat-label>
           <input type="name" matInput formControlName="city" name="city">
           <mat-error *ngIf="form.get('city')?.hasError('required')">
             * Campo <strong>requerido</strong>
           </mat-error>
-        </mat-form-field>
+        </mat-form-field> -->
+        <input type="name" placeholder="Ciudad" formControlName="city" name="city">
+        <p  *ngIf="form.get('city')?.hasError('required') && form.get('city')?.touched" class="input-error"><strong>* Campo requerido</strong> </p>
+
       </div>
 
       <div class="separate2">
-        <mat-form-field class="mat-input" appearance="fill">
+        <!-- <mat-form-field class="mat-input" appearance="fill">
           <mat-label>Empresa</mat-label>
           <input type="name" matInput formControlName="enterprise" name="enterprise">
           <mat-error *ngIf="form.get('enterprise')?.hasError('required')">
             * Campo <strong>requerido</strong>, si no aplica poner nombre
           </mat-error>
-        </mat-form-field>
+        </mat-form-field> -->
+        <input type="name" placeholder="Empresa" formControlName="enterprise" name="enterprise">
+        <p  *ngIf="form.get('enterprise')?.hasError('required') && form.get('enterprise')?.touched" class="input-error"><strong>* Campo requerido</strong> </p>
 
-        <mat-form-field class="mat-input" appearance="fill">
+        <select name="service" id="service"  formControlName="service">
+          <option class="option" value="servicio">Servicio</option>
+          <option value="Locución comercial TV y radio">Locución comercial TV y radio</option>
+          <option value="Personajes TV y radio">Personajes TV y radio</option>
+          <option value="Locución comercial medios digitales">Locución comercial medios digitales</option>
+          <option value="Locución Corporativa">Locución Corporativa</option>
+          <option value="Doblaje">Doblaje</option>
+          <option value="Personajes Cantados">Personajes Cantados</option>
+          <option value="Documentales">Documentales</option>
+          <option value="Podcast">Podcast</option>
+          <option value="e-learning">e-learning</option>
+          <option value="IVR">IVR</option>
+
+        </select>
+        <p  *ngIf="form.get('service')?.hasError('required') && form.get('service')?.touched" class="input-error"><strong>* Campo requerido</strong> </p>
+
+        <!-- <mat-form-field class="mat-input" appearance="fill">
           <mat-label>Servicio</mat-label>
           <mat-select matInput formControlName="service" name="service">
             <mat-option value="Locución comercial TV y radio">Locución comercial para TV y radio</mat-option>
@@ -77,15 +108,18 @@
           <mat-error *ngIf="form.get('service')?.hasError('required')">
             * Campo <strong>requerido</strong>
           </mat-error>
-        </mat-form-field>
+        </mat-form-field> -->
 
-        <mat-form-field class="example-full-width" appearance="fill">
+        <!-- <mat-form-field class="example-full-width" appearance="fill">
           <mat-label>Deja tú mensaje...</mat-label>
           <textarea matInput   formControlName="message" name="message"></textarea>
           <mat-error *ngIf="form.get('message')?.hasError('required')">
             * Campo <strong>requerido</strong>
           </mat-error>
-        </mat-form-field>
+        </mat-form-field> -->
+        <textarea placeholder="Deja tú mensaje"   formControlName="message" name="message"></textarea>
+        <p  *ngIf="form.get('message')?.hasError('required') && form.get('message')?.touched" class="input-error"><strong>* Campo requerido</strong> </p>
+
       </div>
     </div>
 

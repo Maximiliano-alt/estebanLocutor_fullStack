@@ -15,6 +15,7 @@ import { MultimediaComponent } from './multimedia/components/multimedia.componen
 import { ContractComponent } from './contract/components/contract.component';
 import { FormsModule } from '@angular/forms';
 import { EmailMessageService } from './services/email-message.service';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,7 @@ import { EmailMessageService } from './services/email-message.service';
     HttpClientModule,
     FormsModule
   ],
-  providers: [EmailMessageService],
+  providers: [EmailMessageService,{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

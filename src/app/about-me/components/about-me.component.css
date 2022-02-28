@@ -9,7 +9,6 @@ section{
 
 }
 .container{
-  margin: 40px auto;
   padding: 18px 20px 0 0;
   width: 300px;
   background: black;
@@ -42,6 +41,7 @@ section{
   text-align: center;
   font-family: 'Quicksand', sans-serif;
   font-size: 11px;
+  margin-top: 25px;
 }
 .act-1{
   visibility: hidden;
@@ -54,6 +54,7 @@ div .more{
   background-color:rgba(13, 0, 0, 0.39);
   margin-top: 16px;
   align-content: center;
+
 
 }
 div .more a:hover{
@@ -88,7 +89,7 @@ div .why-hire a:hover{
   color: #FFFFFF;
   font-family: 'Quicksand', sans-serif;
   font-size: 15px;
-  margin-top: 15px;
+  margin-top: 20px;
   cursor: pointer;
 }
 .swiper-container{
@@ -101,7 +102,7 @@ div .why-hire a:hover{
     display: block;
     width: 800px;
     height: 180px;
-    margin-top: 5px;
+    margin-top: -5px;
   }
   .container p{
     font-size: 13px;
