@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { FormBuilder, FormGroup,FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup,FormControl, FormGroupDirective, NgForm, Validators, } from '@angular/forms';
 import {ErrorStateMatcher} from '@angular/material/core';
+import { EmailMessageService } from 'src/app/services/email-message.service';
+import Swal from 'sweetalert2';
 @Component({
   selector: 'app-contract',
   templateUrl: './contract.component.html',
@@ -11,14 +13,24 @@ export class ContractComponent implements OnInit {
   form!: FormGroup;
 
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder, public messageService: EmailMessageService) {
     this.createFormGroup();
   }
 
   ngOnInit(): void {
   }
-  saveInfo(event: Event){
-    event.preventDefault();
+  contactForm(form:any){
+    //event.preventDefault();
+    this.messageService.sendMessage(form).subscribe(() => {
+      try {
+        Swal.fire({icon: 'success',text: 'Se envió el formulario correctamente'})
+      } catch (error) {
+        Swal.fire({icon: 'warning',title: 'Oops...',text: 'Ocurrió un problema'});
+
+      }
+
+    });
+
     if(this.form.valid){
       console.log(this.form.value);
     }

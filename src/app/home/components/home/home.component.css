@@ -24,10 +24,10 @@ body{
 
 }
 .container > h1{
-  font-size: 12px;
+  font-size: 3vw;
   color: #FFFF;
   font-family: 'Quicksand', sans-serif;
-  padding-top: 15px;
+  padding-top: 12px;
 
 }
 .banner{
@@ -38,8 +38,8 @@ body{
 }
 @media (min-width: 450px) {
   img{
-    width: 70%;
-    height: 40%;
+    width: 60%;
+    height: 30%;
     margin-top: 5%;
   }
 }
@@ -59,8 +59,8 @@ body{
 }
 @media (min-width: 1024px) {
   img{
-    width: 50%;
-    height: 55%;
+    width: 60%;
+    height: 50%;
     margin-top: 0;
   }
   .container{
@@ -78,3 +78,18 @@ body{
   }
 }
 
+@media (min-width: 850px){
+  img{
+    width: 50%;
+    height: 40%;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px){
+  img{
+    width: 50%;
+    height: 60%;
+    margin-top: 0;
+  }
+}

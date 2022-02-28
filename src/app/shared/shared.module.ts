@@ -5,6 +5,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { MaterialModule } from '../material/material.module';
 import { BannerComponent } from '../home/components/banner/banner.component';
 import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -19,7 +20,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   exports:[
     HeaderComponent,
-    BannerComponent
+    BannerComponent,
+    MaterialModule
 
   ]
 })
