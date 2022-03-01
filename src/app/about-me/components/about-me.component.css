@@ -6,6 +6,8 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #FFFFFF;
+  font-family: 'gill-sans-nova', sans-serif;
 
 }
 .container{
@@ -13,11 +15,47 @@ section{
   width: 300px;
   background: black;
   padding: 20px ;
-  height: 350px;
+  height: 360px;
   word-wrap: break-word;
   overflow: hidden;
   background-color:rgba(13, 0, 0, 0.39);
   justify-content: center;
+}
+.container-why{
+  padding: 18px 20px 0 0;
+  width: 300px;
+  background: black;
+  padding: 20px ;
+  height: 230px;
+  word-wrap: break-word;
+  overflow: hidden;
+  background-color:rgba(13, 0, 0, 0.39);
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.container-why h1{
+  height: 10px;
+  margin: 0;
+  padding-left: 55px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'gill-sans-nova', sans-serif;
+  font-size: 18px;
+  margin-right: 50px;
+}
+.container-why h2{
+  color: #FFFFFF;
+  height: 20px;
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 3px;
+}
+.container-why p{
+  color: #ded9dc;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 11px;
+  margin-top: 25px;
 }
 .container h1{
   height: 10px;
@@ -105,6 +143,16 @@ div .why-hire a:hover{
     margin-top: -5px;
   }
   .container p{
+    font-size: 13px;
+  }
+  .container-why{
+    width: 84% !important;
+    display: block;
+    width: 800px;
+    height: 180px;
+    margin-top: -5px;
+  }
+  .container-why p{
     font-size: 13px;
   }
   section{
