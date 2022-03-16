@@ -10,7 +10,7 @@ SwiperCore.use([EffectCoverflow, Pagination]);
   selector: 'app-banner',
   templateUrl: './banner.component.html',
   styleUrls: ['./banner.component.scss'],
-  encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.ShadowDom,
 })
 export class BannerComponent implements OnInit {
 

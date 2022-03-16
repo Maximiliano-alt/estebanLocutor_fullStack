@@ -2,7 +2,6 @@
   justify-content: center;
 }
 .container h1{
-  height: 10px;
   margin: 0;
   padding-left: 50px;
   color: #FFFFFF;
@@ -10,7 +9,6 @@
   font-family: 'gill-sans-nova', sans-serif;
   font-size: 18px;
   margin-right: 50px;
-  margin-top: 24px;
 }
 .container h2{
   color: #FFFFFF;
@@ -108,6 +106,11 @@ button a:hover{
  ::placeholder{
    color: #FFFFFF;
    font-family: 'Quicksand', sans-serif;
+}
+@media (min-width: 800px){
+  .input-error{
+    font-size: 2vw;
+  }
 }
 @media (min-width: 1024px){
   .container h1{
