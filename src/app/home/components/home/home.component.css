@@ -27,7 +27,6 @@ body{
   font-size: 3vw;
   color: #FFFF;
   font-family: 'Quicksand', sans-serif;
-  padding-top: 12px;
 
 }
 .banner{
@@ -40,7 +39,6 @@ body{
   img{
     width: 60%;
     height: 30%;
-    margin-top: 5%;
   }
 }
 @media (min-width: 650px) {
@@ -52,8 +50,8 @@ body{
 }
 @media (min-width: 750px) {
   img{
-    width: 60%;
-    height: 40%;
+    width: 50%;
+    height: 30%;
     margin-top: 3%;
   }
 }
@@ -81,15 +79,21 @@ body{
 @media (min-width: 850px){
   img{
     width: 50%;
-    height: 40%;
-    margin-top: 0;
+    height: 36%;
   }
 }
 
 @media (min-width: 1200px){
   img{
     width: 50%;
-    height: 60%;
+    height: 40%;
     margin-top: 0;
+  }
+}
+
+@media (min-width: 1400px){
+  img{
+    width: 40vw;
+    height: 25vw;
   }
 }

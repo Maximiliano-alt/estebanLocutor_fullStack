@@ -16,6 +16,7 @@ import { ContractComponent } from './contract/components/contract.component';
 import { FormsModule } from '@angular/forms';
 import { EmailMessageService } from './services/email-message.service';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { SwiperModule } from "swiper/angular";
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +36,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     SharedModule,
     MaterialModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    SwiperModule
   ],
   providers: [EmailMessageService,{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
