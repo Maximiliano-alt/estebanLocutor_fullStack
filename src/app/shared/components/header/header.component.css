@@ -37,7 +37,7 @@ head{
 }
 .social-media{
   margin-right: 5px;
-  margin-top: 2.5%;
+  margin-top: -1.5%;
 
 }
 .social{
@@ -97,11 +97,14 @@ head{
   .nav{
     margin-right: 9vw;
   }
+  .social-media{
+    margin-top: -0.5%;
+  }
 
 }
 @media (min-width: 750px){
   .social-media{
-    margin-top: 1.5%;
+    margin-top: 0.5%;
   }
 }
 @media (min-width: 1024px) {
