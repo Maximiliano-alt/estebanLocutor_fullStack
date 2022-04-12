@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url:'https://estebanlocutor-76118.web.app/',//http local host 3000
+  url:'https://esteban-locutor.herokuapp/formulario',//http local host 3000
   GAPI_CLIENT_ID: '728793950491-3ohf724jjj2j3qj0orarc1lcdn2okmjc.apps.googleusercontent.com'
 };
 
