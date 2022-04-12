@@ -1,20 +1,42 @@
-.container{
 
+@import "~swiper/css";
+@import "~swiper/css/effect-coverflow";
+@import "~swiper/css/pagination";
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 140%;
+  height: 120%;
+}
+
+
+.container{
   margin: 40px auto;
   padding: 18px 20px 0 0;
+  height: 100%;
   width: 260px;
-  background: black;
   padding: 20px ;
   height: 250px;
   word-wrap: break-word;
   overflow: hidden;
-  background-color:rgba(13, 0, 0, 0.39);
   justify-content: center;
 }
 .container h1{
   height: 10px;
   margin: 0;
-  padding-left: 55px;
+  padding-left: 130px;
   color: #FFFFFF;
   text-align: center;
   font-family: 'gill-sans-nova', sans-serif;
@@ -24,6 +46,7 @@
 .container h2{
   color: #FFFFFF;
   height: 20px;
+  padding-left: 5pc;
   margin-top: 0;
   font-size: 20px;
   font-weight: 3px;
@@ -36,14 +59,17 @@
   margin-top: 25px;
 }
 .swiper-container{
-  background: rgba(13, 0, 0, 0.39);
-  border-top: 1px solid #FFFFFF;
+
 }
+// .swiper-slide-active{
+//   margin-left: -7%;
+// }
 @media (min-width: 450px) {
     .container{
       width: 80% !important;
       display: block;
       width: 800px;
+      height: 100%;
       margin-top: 20px;
     }
 }
@@ -55,5 +81,6 @@
 @media (min-width: 1024px){
   .container{
     margin-top: -5px;
+    height: 80%;
   }
 }

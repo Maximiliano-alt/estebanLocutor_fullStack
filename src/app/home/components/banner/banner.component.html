@@ -1,121 +1,77 @@
 <swiper
-    [effect]="'coverflow'"
-    [grabCursor]="true"
-    [centeredSlides]="true"
-    [slidesPerView]="'auto'"
-    [coverflowEffect]="{
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true
-    }"
-
-    class="mySwiper"
-  >
-  <!-- <p style="color: white;">Agorex</p> -->
-    <ng-template swiperSlide>Agorex
-      <video controls class="agorex">
-        <source src="../../assets/images/Agorex.mp4" >
-        Your browser does not support the video tag.
-      </video>
-      </ng-template>
-    <ng-template swiperSlide>Blue express
-      <video controls class="blue">
-        <source src="../../assets/images/Blue Express.mp4" >
-        Your browser does not support the video tag.
-      </video>
-    </ng-template>
-    <ng-template swiperSlide>Fazil
-      <video controls class="fazil">
-        <source src="../../assets/images/Fázil - Supermercado.mp4" >
-        Your browser does not support the video tag.
-      </video></ng-template>
-    <ng-template swiperSlide>ICE
-      <video controls class="fazil">
-        <source src="../../assets/images/Ice 10s.mp4" >
-        Your browser does not support the video tag.
-      </video>
-    </ng-template>
-    <ng-template swiperSlide>Swan
-      <video controls class="swan">
-        <source src="../../assets/images/Swan 30s.mp4" >
-        Your browser does not support the video tag.
-      </video>
-    </ng-template>
-    <ng-template swiperSlide>Coopeuch
-      <video src="../../assets/images/¿Qué es Coopeuch Sus beneficios y remanente[1]_Trim.mp4"  controls class="coopeuch">
-        Your browser does not support the video tag.
-      </video>
-    </ng-template>
-    <ng-template swiperSlide>Lollapalooza Triton
-      <video controls class="triton">
-        <source src="../../assets/images/¡Vuelve a disfrutar Lollapalooza con TRITON!.mp4" >
-        Your browser does not support the video tag.
-      </video>
-    </ng-template>
-
-    <ng-template swiperSlide>Fruta fresca Freskitapas
-      <video controls class="triton">
-        <source src="../../assets/images/Frutafresca Freskitapas[1]_Trim.mp4" >
-        Your browser does not support the video tag.
-      </video>
-    </ng-template>
-
-    <ng-template swiperSlide>Glucerna
-      <video controls class="triton">
-        <source src="../../assets/images/Glucerna 2020_Trim.mp4" >
-        Your browser does not support the video tag.
-      </video>
-    </ng-template>
-
-    <ng-template swiperSlide>Universidad cientifica
-      <video controls class="triton">
-        <source src="../../assets/images/¡Cambia las reglas del juego![1]_Trim.mp4" >
-        Your browser does not support the video tag.
-      </video>
-    </ng-template>
-
-    <ng-template swiperSlide>Supermercado Mayorista 10
-      <video controls class="triton">
-        <source src="../../assets/images/superMayorista_Trim.mp4" >
-        Your browser does not support the video tag.
-      </video>
-    </ng-template>
-
-    <ng-template swiperSlide>Merrell
-      <video controls class="triton">
-        <source src="../../assets/images/Merrell   My Other Wa[1]_Trim.mp4" >
-        Your browser does not support the video tag.
-      </video>
-    </ng-template>
-
-    <ng-template swiperSlide>Bigtime
-      <video controls class="triton">
-        <source src="../../assets/images/Promo Bigtime Next Leve[1]_Trim.mp4" >
-        Your browser does not support the video tag.
-      </video>
-    </ng-template>
-
-    <ng-template swiperSlide>UFRO
-      <video controls class="triton">
-        <source src="../../assets/images/Admisión 2022   La UFRO comienza en ti Vívela como tu mejor viaj[1]_Trim.mp4" >
-        Your browser does not support the video tag.
-      </video>
-    </ng-template>
-
-    <ng-template swiperSlide>Samsung
-      <video controls class="triton">
-        <source src="../../assets/images/Samsung   Nuevas Lavadoras Frontales Samsun[1]_Trim.mp4" >
-        Your browser does not support the video tag.
-      </video>
-    </ng-template>
-
-    <ng-template swiperSlide>Vida Security
-      <video controls class="triton">
-        <source src="../../assets/images/Vida Security_Trim.mp4" >
-        Your browser does not support the video tag.
-      </video>
-    </ng-template>
-  </swiper>
-
+      style="--swiper-navigation-color: #fff;--swiper-pagination-color: #fff"
+      [spaceBetween]="10"
+      [navigation]="true"
+      [thumbs]="{ swiper: thumbsSwiper }"
+      class="mySwiper2"
+    >
+      <ng-template swiperSlide
+        ><img
+          src="https://swiperjs.com/demos/images/nature-1.jpg" /></ng-template
+      ><ng-template swiperSlide
+        ><img
+          src="https://swiperjs.com/demos/images/nature-2.jpg" /></ng-template
+      ><ng-template swiperSlide
+        ><img
+          src="https://swiperjs.com/demos/images/nature-3.jpg" /></ng-template
+      ><ng-template swiperSlide
+        ><img
+          src="https://swiperjs.com/demos/images/nature-4.jpg" /></ng-template
+      ><ng-template swiperSlide
+        ><img
+          src="https://swiperjs.com/demos/images/nature-5.jpg" /></ng-template
+      ><ng-template swiperSlide
+        ><img
+          src="https://swiperjs.com/demos/images/nature-6.jpg" /></ng-template
+      ><ng-template swiperSlide
+        ><img
+          src="https://swiperjs.com/demos/images/nature-7.jpg" /></ng-template
+      ><ng-template swiperSlide
+        ><img
+          src="https://swiperjs.com/demos/images/nature-8.jpg" /></ng-template
+      ><ng-template swiperSlide
+        ><img
+          src="https://swiperjs.com/demos/images/nature-9.jpg" /></ng-template
+      ><ng-template swiperSlide
+        ><img src="https://swiperjs.com/demos/images/nature-10.jpg"
+      /></ng-template>
+    </swiper>
+    <swiper
+      (swiper)="thumbsSwiper = $event"
+      [spaceBetween]="10"
+      [slidesPerView]="4"
+      [freeMode]="true"
+      [watchSlidesProgress]="true"
+      class="mySwiper"
+    >
+      <ng-template swiperSlide
+        ><img
+          src="https://swiperjs.com/demos/images/nature-1.jpg" /></ng-template
+      ><ng-template swiperSlide
+        ><img
+          src="https://swiperjs.com/demos/images/nature-2.jpg" /></ng-template
+      ><ng-template swiperSlide
+        ><img
+          src="https://swiperjs.com/demos/images/nature-3.jpg" /></ng-template
+      ><ng-template swiperSlide
+        ><img
+          src="https://swiperjs.com/demos/images/nature-4.jpg" /></ng-template
+      ><ng-template swiperSlide
+        ><img
+          src="https://swiperjs.com/demos/images/nature-5.jpg" /></ng-template
+      ><ng-template swiperSlide
+        ><img
+          src="https://swiperjs.com/demos/images/nature-6.jpg" /></ng-template
+      ><ng-template swiperSlide
+        ><img
+          src="https://swiperjs.com/demos/images/nature-7.jpg" /></ng-template
+      ><ng-template swiperSlide
+        ><img
+          src="https://swiperjs.com/demos/images/nature-8.jpg" /></ng-template
+      ><ng-template swiperSlide
+        ><img
+          src="https://swiperjs.com/demos/images/nature-9.jpg" /></ng-template
+      ><ng-template swiperSlide
+        ><img src="https://swiperjs.com/demos/images/nature-10.jpg"
+      /></ng-template>
+    </swiper>

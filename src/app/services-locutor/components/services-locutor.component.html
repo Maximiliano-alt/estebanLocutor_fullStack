@@ -2,40 +2,47 @@
   <div class="container">
     <h1>Servicios</h1>
       <h2>____</h2>
-      <p>Locución comercial para TV y radio <br>
-        Personajes para TV y radio <br>
-        Locución comercial para medios digitales <br>
-        Locución Corporativa <br>
-        Doblaje <br>
-        Personajes Cantados <br>
-        Documentales <br>
-        Podcasts <br>
-        e-learning <br>
-        IVR <br></p>
-  </div>
+
+
   <div class="swiper-container">
     <swiper
     [effect]="'coverflow'"
     [grabCursor]="true"
     [centeredSlides]="true"
     [slidesPerView]="'auto'"
+    [loop]="true"
     [coverflowEffect]="{
-      rotate: 50,
+      rotate: 20,
       stretch: 0,
       depth: 100,
       modifier: 1,
       slideShadows: true
     }"
-
+    [pagination]="true"
     class="mySwiper"
   >
-
-    <ng-template swiperSlide>
-
-      </ng-template>
-    <ng-template swiperSlide>
-
-    </ng-template>
-
+  <ng-template swiperSlide
+  ><img src="..\assets\images\SERVICIOSFOTOS\TV Y RADIO.jpg" /></ng-template
+><ng-template swiperSlide
+  ><img src="..\assets\images\SERVICIOSFOTOS\PERSONAJES TV Y RADIO.jpg" /></ng-template
+><ng-template swiperSlide
+  ><img src="..\assets\images\SERVICIOSFOTOS\LOCUCIÓN COMERCIAL MEDIOS DIGITALES.jpg" /></ng-template
+><ng-template swiperSlide
+  ><img src="..\assets\images\SERVICIOSFOTOS\LOCUCIÓN CORPORATIVA.jpg" /></ng-template
+><ng-template swiperSlide
+  ><img src="..\assets\images\SERVICIOSFOTOS\DOBLAJE.jpg" /></ng-template
+><ng-template swiperSlide
+  ><img src="..\assets\images\SERVICIOSFOTOS\PERSONAJES CANTADOS.jpg" /></ng-template
+><ng-template swiperSlide
+  ><img src="..\assets\images\SERVICIOSFOTOS\DOCUMENTALES.jpg" /></ng-template
+><ng-template swiperSlide
+  ><img src="..\assets\images\SERVICIOSFOTOS\PODCASTS.jpg" /></ng-template
+><ng-template swiperSlide
+  ><img src="..\assets\images\SERVICIOSFOTOS\ELEARNING.jpg"
+/></ng-template>
+<ng-template swiperSlide
+  ><img src="..\assets\images\SERVICIOSFOTOS\IVR.jpg"
+/></ng-template>
   </swiper>
   </div>
+</div>

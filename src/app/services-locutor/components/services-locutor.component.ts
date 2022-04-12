@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-
+import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
+SwiperCore.use([EffectCoverflow, Pagination]);
 @Component({
   selector: 'app-services-locutor',
   templateUrl: './services-locutor.component.html',

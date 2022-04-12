@@ -1,8 +1,9 @@
 import { Component, OnInit, ViewChild,ViewEncapsulation } from '@angular/core';
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y,EffectCoverflow } from 'swiper';
 import { SwiperComponent } from "swiper/angular";
+import SwiperCore, { FreeMode, Navigation, Thumbs } from "swiper";
 
-SwiperCore.use([EffectCoverflow, Pagination]);
+// install Swiper modules
+SwiperCore.use([FreeMode, Navigation, Thumbs]);
 
 
 
@@ -14,7 +15,7 @@ SwiperCore.use([EffectCoverflow, Pagination]);
 })
 export class BannerComponent implements OnInit {
 
-
+  thumbsSwiper: any;
   constructor() { }
 
   ngOnInit(): void {
