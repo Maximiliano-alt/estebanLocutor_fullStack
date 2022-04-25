@@ -9,6 +9,6 @@ export class EmailMessageService {
   constructor(private http: HttpClient) { }
 
   sendMessage(body:string) {
-    return this.http.post(environment.url, body);
+    return this.http.post('https://salty-garden-09967.herokuapp.com/formulario', body);
     }
 }
