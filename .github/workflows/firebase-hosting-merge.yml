@@ -15,6 +15,6 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ESTEBANLOCUTOR_76118 }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ESTEBANLOCUTOR_86F38 }}'
           channelId: live
-          projectId: estebanlocutor-76118
+          projectId: estebanlocutor-86f38
