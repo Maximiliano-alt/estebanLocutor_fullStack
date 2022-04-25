@@ -4,20 +4,25 @@
 @import "~swiper/css/pagination";
 .swiper {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+    padding-top: 30px;
+    padding-right: 10%;
+    padding-bottom: 140px;
+
 }
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
 }
-
+.flex-container{
+  visibility: hidden;
+}
 .swiper-slide img {
   display: block;
-  width: 140%;
+  width: 170%;
+  transform: translateX(-80px);
   height: 120%;
 }
 
@@ -40,16 +45,16 @@
   color: #FFFFFF;
   text-align: center;
   font-family: 'gill-sans-nova', sans-serif;
-  font-size: 18px;
+  font-size: 23px;
   margin-right: 50px;
+  padding-top: 2%;
 }
 .container h2{
   color: #FFFFFF;
   height: 20px;
   padding-left: 5pc;
-  margin-top: 0;
-  font-size: 20px;
-  font-weight: 3px;
+  margin-top: 6px;
+  font-size: 17px;
 }
 .container p{
   color: #ded9dc;
@@ -64,14 +69,87 @@
 // .swiper-slide-active{
 //   margin-left: -7%;
 // }
+@media (max-width: 1300px) {
+
+  .container{
+    transform: translateX(-10px);
+  }
+}
+@media (max-width: 1100px){
+  .container{
+    margin-top: -5px;
+    height: 70%;
+    justify-content: center;
+    transform: translateX(-20px);
+  }
+  .swiper{
+    padding-bottom: 55px;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 150%;
+    transform: translateX(-55px);
+    height: 100%;
+  }
+   .swiper-pagination-horizontal {
+    left: -3% !important;
+  }
+
+}
+@media (max-width: 800px) {
+  .swiper{
+    visibility: hidden;
+  }
+  .swiper-slide img {
+    visibility: hidden;
+  }
+  .container{
+    padding-left: 35px;
+    height: 406%;
+  }
+  .container h1{
+    margin-left: -70px;
+  }
+  .container h2{
+    margin-left: -70px;
+  }
+  .flex-container{
+    margin-top: -370px;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .flex-item{
+
+  }
+  .flex-item img{
+    width: 400px;
+    visibility: visible;
+    margin-bottom: 2%;
+  }
+}
+@media (max-width: 450px) {
+  .flex-item img{
+    width: 280px;
+  }
+  .container{
+    height: 300%;
+  }
+}
+@media (max-width: 400px) {
+
+  .container{
+    height: 280%;
+  }
+}
 @media (min-width: 450px) {
     .container{
-      width: 80% !important;
+      width: 95% !important;
       display: block;
-      width: 800px;
-      height: 100%;
       margin-top: 20px;
     }
+
 }
 @media (min-width: 850px){
   .container p{
@@ -82,5 +160,18 @@
   .container{
     margin-top: -5px;
     height: 80%;
+    justify-content: center;
+  }
+}
+@media (min-width: 1570px){
+  .swiper{
+    width: 95%;
+    padding-right: 0%;
+  }
+}
+@media (min-width: 1680px){
+  .swiper{
+    width: 65%;
+    padding-right: 0%;
   }
 }

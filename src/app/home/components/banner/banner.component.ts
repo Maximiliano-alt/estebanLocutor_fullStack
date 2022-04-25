@@ -1,10 +1,10 @@
 import { Component, OnInit, ViewChild,ViewEncapsulation } from '@angular/core';
 import { SwiperComponent } from "swiper/angular";
-import SwiperCore, { FreeMode, Navigation, Thumbs } from "swiper";
+import SwiperCore, { Zoom, Navigation, Pagination, Swiper } from "swiper";
 
 // install Swiper modules
-SwiperCore.use([FreeMode, Navigation, Thumbs]);
-
+SwiperCore.use([Zoom, Navigation, Pagination]);
+Swiper.use([Navigation, Pagination]);
 
 
 @Component({

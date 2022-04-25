@@ -100,10 +100,29 @@ body{
 @media (max-width: 400px){
   video{
     width: 100vw;
-
+  }
+  .container > h1{
+    font-size: 12px;
   }
 }
+@media (max-width: 362px){
 
+  .container > h1{
+    font-size: 10px;
+  }
+}
+@media (max-width: 310px){
+
+  .container > h1{
+    font-size: 8px;
+  }
+}
+@media (max-width: 270px){
+
+  .container > h1{
+    font-size: 7px;
+  }
+}
 @media (max-width: 500px) and (min-width: 400px){
   video{
     width: 100vw;
