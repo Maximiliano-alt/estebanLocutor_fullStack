@@ -24,7 +24,7 @@ body{
 
 }
 .container > h1{
-  font-size: 3vw;
+  font-size: 10px;
   color: #FFFF;
   font-family: 'Quicksand', sans-serif;
 
@@ -76,10 +76,52 @@ body{
   }
 }
 
+@media (min-width: 401px) {
+  .container > h1{
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 430px) {
+  .container > h1{
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 470px) {
+  .container > h1{
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 500px) {
+  .container > h1{
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 596px) {
+  .container > h1{
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 750px) {
+  .container > h1{
+    font-size: 16px;
+  }
+}
+
 @media (min-width: 850px){
   img{
     width: 50%;
     height: 36%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container > h1{
+    font-size: 20px;
   }
 }
 
@@ -88,6 +130,9 @@ body{
     width: 50%;
     height: 40%;
     margin-top: 0;
+  }
+  .container > h1{
+    font-size: 23px;
   }
 }
 
@@ -102,15 +147,15 @@ body{
     width: 100vw;
   }
   .container > h1{
-    font-size: 12px;
-  }
-}
-@media (max-width: 362px){
-
-  .container > h1{
     font-size: 10px;
   }
 }
+@media (max-width: 372px){
+  .container > h1{
+    font-size: 9px;
+  }
+}
+
 @media (max-width: 310px){
 
   .container > h1{
